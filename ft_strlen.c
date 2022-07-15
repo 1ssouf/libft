@@ -6,9 +6,11 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:51:17 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/04 13:58:17 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/15 21:30:10 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strlen(const char *s)
 {

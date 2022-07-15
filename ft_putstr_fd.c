@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 18:52:42 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/14 19:06:45 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/15 18:57:18 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,3 @@ void	ft_putstr_fd(char *s, int fd)
 		}
 	}
 }
-/*
-int	main(void)
-{
-	char a[44] = "agsssssdwaef";
-	ft_putstr_fd(a, 1);
-}
-*/

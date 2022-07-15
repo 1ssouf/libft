@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:06:30 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/06 17:23:20 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/15 16:36:20 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isalnum(int c)
 {
-	if (ft_isdigit || ft_isalpha)
+	if (ft_isdigit(c) || ft_isalpha(c))
 		return (1);
 	return (0);
 }

@@ -6,13 +6,13 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:01:09 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/06 14:43:29 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/15 16:31:26 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9' )
-		return (0);
-	return (1);
+		return (1);
+	return (0);
 }

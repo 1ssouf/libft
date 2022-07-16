@@ -6,17 +6,17 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 12:50:46 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/12 13:50:22 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/16 19:08:25 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t		i;
 
-	if (src == NULL || dst == NULL)
+	if (!src || !dst)
 		return (NULL);
 	i = 0;
 	while (i < n)

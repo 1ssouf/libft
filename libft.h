@@ -6,18 +6,14 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 15:28:33 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/16 18:28:58 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/17 17:48:22 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
 # include <unistd.h>
-# include <string.h>
-# include <string.h>
-# include <stdio.h>
 # include <stdlib.h>
 
 int		ft_isdigit(int c);
@@ -38,5 +34,6 @@ void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 char	*ft_strdup(const char *s1);
+void	*ft_memchr(const void *s, int c, size_t n);
 
 #endif

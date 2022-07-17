@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 14:02:46 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/15 16:38:18 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/17 15:41:04 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	if (!src || !dst)
+	if (!src && !dst)
 		return (NULL);
 	if (dst > src)
 	{

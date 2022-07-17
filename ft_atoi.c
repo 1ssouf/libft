@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 16:57:51 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/13 17:37:22 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/17 18:00:46 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	num;
-	int	neg;
+	long	i;
+	long	num;
+	int		neg;
 
 	i = 0;
 	num = 0;
@@ -31,7 +31,7 @@ int	ft_atoi(const char *str)
 			neg *= -1;
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (str[i] && ft_isdigit(str[i]))
 	{
 		num = num * 10 + (str[i] - 48);
 		i++;
@@ -41,7 +41,7 @@ int	ft_atoi(const char *str)
 /*
 int main ()
 {
-	char a[] = "   -5d6";
+	char a[] = "   -5666666655555555555555555555665556ss6666666";
 	printf ("\n\nres = %d\n\n", ft_atoi(a));
 	printf ("\n\nres = %d\n\n", atoi(a));
 }

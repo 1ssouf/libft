@@ -6,13 +6,13 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 15:24:39 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/12 12:39:05 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/17 15:54:24 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t		i;
 	const char	*str;

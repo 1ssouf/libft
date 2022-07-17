@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 16:13:49 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/16 19:41:55 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/17 15:16:38 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	ft_memmove(str, s1, s1_len);
 	ft_memmove(str + s1_len, s2, s2_len);
-	str[len + 1] = '\0';
+	str[len] = '\0';
 	return (str);
 }
 /*

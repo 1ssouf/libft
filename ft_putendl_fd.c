@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 16:45:33 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/15 16:58:11 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/17 15:18:38 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putendl_fd(char *s, int fd)
 	{
 		while (*s != '\0')
 		{
-			write (fd, s, 2);
+			write (fd, s, 1);
 			s++;
 		}
 	}

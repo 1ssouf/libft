@@ -6,13 +6,13 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 12:45:49 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/15 16:29:15 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/17 15:11:15 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (0);
-	return (1);
+		return (1);
+	return (0);
 }

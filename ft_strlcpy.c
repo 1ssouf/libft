@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 20:42:06 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/17 17:07:29 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/26 17:40:54 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,15 @@
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
-	
-	if (!src || !dst)
-		return (0);
+
 	i = 0;
-	while (src[i])
-		i++;
-	if (dstsize == 0)
-		return (i);
-	i = 0;
+	if (dstsize <= 0)
+		return (ft_strlen(src));
 	while (src[i] && i < dstsize - 1)
 	{
 		dst[i] = src[i];
 		i++;
 	}
 	dst[i] = '\0';
-	i = 0;
-	while (src[i])
-		i++;
-	return (i);
+	return (ft_strlen(src));
 }
-														

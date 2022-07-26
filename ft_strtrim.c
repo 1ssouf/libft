@@ -1,30 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/14 18:52:42 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/26 19:13:17 by ialousse         ###   ########.fr       */
+/*   Created: 2022/07/26 20:00:40 by ialousse          #+#    #+#             */
+/*   Updated: 2022/07/26 20:01:44 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	int	i;
-
-	i = 0;
-	if (!s)
-		return ;
-	if (s != 0)
-	{
-		while (s[i])
-		{
-			write(fd, &s[i], 1);
-			i++;
-		}
-	}
+	
 }

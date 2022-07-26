@@ -5,57 +5,56 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/16 14:16:08 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/16 19:25:08 by ialousse         ###   ########.fr       */
+/*   Created: 2022/07/26 19:19:02 by ialousse          #+#    #+#             */
+/*   Updated: 2022/07/26 19:59:20 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_digit_count(long int i)
+static int	ft_len(long int nb)
 {
-	int	count;
+	int	i;
 
-	count = 0;
-	if (i < 0)
+	i = 0;
+	if (nb == 0)
+		return (0);
+	if (nb < 0)
 	{
-		i *= -1;
-		count++;
+		nb *= -1;
+		i++;
 	}
-	while (i > 0)
+	while (nb != 0)
 	{
-		i /= i;
-		count++;
+		nb /= 10;
+		i++;
 	}
-	return (count);
+	return (i);
 }
 
 char	*ft_itoa(int n)
 {
+	long int	nbr;
 	char		*str;
-	int			i;
-	long int	nb;
+	size_t		len;
 
-	nb = n;
-	i = ft_digit_count(nb);
-	str = malloc(i * sizeof(char) + 1);
+	nbr = n;
+	len = ft_len(nbr);
+	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
-	str[i--] = 0;
-	if (nb == 0)
-	{
-		str = ft_calloc(2, sizeof(char));
-		str[0] = 48;
-	}
-	if (nb < 0)
+	str[len--] = '\0';
+	if (nbr == 0)
+		str[0] = '0';
+	if (nbr < 0)
 	{
 		str[0] = '-';
-		nb *= nb;
+		nbr *= -1;
 	}
-	if (nb > 0)
+	while (nbr > 0)
 	{
-		str[i--] = nb % 10 + '0';
-		nb /= 10;	
+		str[len--] = (nbr % 10) + '0';
+		nbr /= 10;
 	}
 	return (str);
 }

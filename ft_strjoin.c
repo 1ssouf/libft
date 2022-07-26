@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 16:13:49 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/17 15:16:38 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/26 16:44:47 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,28 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	s1_len;
-	size_t	s2_len;
-	size_t	len;
 	char	*str;
+	size_t	i;
+	size_t	j;
 
-	if (!s1 && !s2)
-		return (ft_strdup(""));
-	if (s1 && !s2)
-		return (ft_strdup(s1));
-	if (s2 && !s1)
-		return (ft_strdup(s2));
-	s1_len = ft_strlen(s1);
-	s2_len = ft_strlen(s2);
-	len = s1_len + s2_len + 1;
-	str = malloc(sizeof(char) * len);
+	if (!s1 || !s2)
+		return (NULL);
+	str = malloc(sizeof(char) * ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!str)
 		return (NULL);
-	ft_memmove(str, s1, s1_len);
-	ft_memmove(str + s1_len, s2, s2_len);
-	str[len] = '\0';
+	i = 0;
+	while (s1[i])
+	{
+		str[i] = s1[i];
+		i++;
+	}
+	j = 0;
+	while (s2[j])
+	{
+		str[i + j] = s2[j];
+		j++;
+	}
+	str[i + j] = '\0';
 	return (str);
 }
 /*

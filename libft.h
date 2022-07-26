@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 15:28:33 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/26 17:48:25 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/26 21:11:30 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,6 @@ char	*ft_strdup(const char *s1);
 void	*ft_memchr(const void *s, int c, size_t n);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+void	ft_putendl_fd(char *s, int fd);
 
 #endif

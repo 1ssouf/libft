@@ -1,66 +1,79 @@
-NAME	= libft.a
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/07/31 17:47:23 by ialousse          #+#    #+#              #
+#    Updated: 2022/07/31 17:47:35 by ialousse         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
-SRCS	= ft_isalpha.c \
-			ft_isdigit.c \
+NAME = libft.a
+RM = rm -rf
+cc = gcc
+FLAGS = -Wall -Wextra -Werror
+NORMINETTE = norminette -R CheckDefine
+
+INC = \
+			libft.h \
+			
+SRC = \
 			ft_isalnum.c \
+			ft_isalpha.c \
 			ft_isascii.c \
+			ft_isdigit.c \
 			ft_isprint.c \
-			ft_strlen.c \
-			ft_memset.c \
+			ft_tolower.c \
+			ft_toupper.c \
+			ft_atoi.c \
+			ft_memcmp.c \
+			ft_strncmp.c \
 			ft_bzero.c \
+			ft_putchar_fd.c \
+			ft_putendl_fd.c \
+			ft_putnbr_fd.c \
+			ft_putstr_fd.c \
+			ft_striteri.c \
+			ft_calloc.c \
+			ft_memchr.c \
 			ft_memcpy.c \
 			ft_memmove.c \
-			ft_strlcpy.c \
-			ft_strlcat.c \
-			ft_toupper.c \
-			ft_tolower.c \
+			ft_memset.c \
+			ft_itoa.c \
 			ft_strchr.c \
-			ft_strrchr.c \
-			ft_strncmp.c \
-			ft_memchr.c \
-			ft_memcmp.c \
-			ft_strnstr.c \
-			ft_atoi.c \
-			ft_calloc.c \
 			ft_strdup.c \
 			ft_strjoin.c \
 			ft_strmapi.c \
-			ft_putchar_fd.c \
-			ft_putstr_fd.c \
-			ft_putendl_fd.c \
-			ft_putnbr_fd.c \
+			ft_strnstr.c \
+			ft_strrchr.c \
 			ft_substr.c \
-			ft_itoa.c \
+			ft_strlcat.c \
+			ft_strlcpy.c \
+			ft_strlen.c \
 			ft_strtrim.c \
 			ft_split.c \
 
+SRCS = $(SRC)
+OBJS = $(addsuffix .o, $(basename $(SRC)))
+INCS = $(addprefix -I, $(INC))
 
-OBJS	= ${SRCS:.c=.o}
+all : $(NAME)
 
+$(NAME) : $(OBJS)
+		ar rcs $@ $^
 
-INCS	= .
+clean :
+		$(RM) $(OBJS)
 
-LIB		= ar rcs
-GCC		= gcc
-RM		= rm -f
-CFLAGS	= -Wall -Wextra -Werror
+fclean : clean
+		$(RM) $(NAME)
 
-%.o : %.c 
-			${GCC} ${CFLAGS} -c $< -o ${<:.c=.o} -I ${INCS}
+re : fclean all
 
-${NAME}:	${OBJS}
-			${LIB} ${NAME} ${OBJS} 
-
-all:		${NAME}
+.c.o: $(SRCS)
+		$(CC) -c -o $@ $< $(FLAGS)
 
 norm:
-			norminette
-clean:
-			${RM} ${OBJS} ${OBJS_b}
-
-fclean:		clean
-			${RM} ${NAME}
-
-re:			fclean all
-
-.PHONY:		all clean fclean re .c.o bonus norm
+		$(NORMINETTE)

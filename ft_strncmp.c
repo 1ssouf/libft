@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 20:17:29 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/15 21:11:41 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/30 19:38:07 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		i++;
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
-/*
-int main (void)
-{
-	char a[] = "issouf";
-	char b[] = "issoufjhk";
-
-	printf("\n%d", ft_strncmp(a, b, 7));
-	printf("\n%d\n", strncmp(a, b, 7));
-}
-*/

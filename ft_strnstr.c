@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 14:49:25 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/13 16:56:46 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/31 17:10:58 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
-/*
-int main()
-{
-	const char	a[] = "cc cv toi";
-	const char	b[] = " ";
-	printf ("\nresulta == %s\n", ft_strnstr(a, b, 3));
-	return (0);
-}
-*/

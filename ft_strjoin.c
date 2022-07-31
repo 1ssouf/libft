@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 16:13:49 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/26 16:44:47 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/31 17:10:36 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i + j] = '\0';
 	return (str);
 }
-/*
-int main (void)
-{
-	char a[] = "abc";
-	char b[] = "def";
-	printf("\n\n%s\n\n",ft_strjoin(a, b));
-	return (0);
-}
-*/

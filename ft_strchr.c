@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 18:02:07 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/06 19:41:49 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/30 19:54:39 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,17 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s + a);
 	return (0);
 }
-/*
-int	main(void) 
-{
-	const char	str[] = "salut cv?????";
-	const char	ch = 'c';
-	char	*ret;
-
-	ret = ft_strchr(str, ch);
-
-   printf("\n\n%c \n%s\n\n", ch, ret);
-   
-   return(0);
-}
-*/

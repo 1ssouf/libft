@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 16:57:51 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/26 18:30:26 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/31 17:08:24 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,3 @@ int	ft_atoi(const char *str)
 	}
 	return (num * neg);
 }
-/*
-int main ()
-{
-	char a[] = "   -5666666655555555555555555555665556ss6666666";
-	printf ("\n\nres = %d\n\n", ft_atoi(a));
-	printf ("\n\nres = %d\n\n", atoi(a));
-}
-*/

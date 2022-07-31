@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 18:11:29 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/07 18:33:36 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/31 17:09:39 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,26 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
-int	main (void)
-{
-   char str1[15];
-   char str2[15];
-   int ret;
-
-   memcpy(str1, "qwertya", 6);
-   memcpy(str2, "qwertyw", 6);
-
-   ret = ft_memcmp(str1, str2, 7);
-
-   if(ret > 0) {
-      printf("str2 plus grand que str1");
-   } else if(ret < 0) {
-      printf("str1 plus grand que str2");
-   } else {
-      printf("str1 egale str2");
-   }
-   
-   return(0);
-}
-*/

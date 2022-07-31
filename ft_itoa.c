@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/26 19:19:02 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/26 19:59:20 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/31 17:05:03 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static int	ft_len(long int nb)
 
 	i = 0;
 	if (nb == 0)
-		return (0);
+		return (1);
 	if (nb < 0)
 	{
 		nb *= -1;
@@ -53,7 +53,7 @@ char	*ft_itoa(int n)
 	}
 	while (nbr > 0)
 	{
-		str[len--] = (nbr % 10) + '0';
+		str[len--] = nbr % 10 + '0';
 		nbr /= 10;
 	}
 	return (str);

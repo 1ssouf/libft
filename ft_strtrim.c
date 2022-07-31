@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/26 20:00:40 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/26 21:16:30 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/31 17:11:11 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,10 +48,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str = ft_substr(s1, start, (end - start) + 1);
 	return (str);
 }
-/*
-int	main(void)
-{
-	printf("\n\n%s\n\n", ft_strtrim("lorem ipsum dolor sit am", ""));
-	return (0);
-}
-*/

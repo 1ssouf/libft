@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 14:48:48 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/06 17:19:07 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/31 17:10:08 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,20 +26,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-
-/*
-int	main ()
-{
-	char	str[505555] = "salut ca va?";
-
-	printf ("\n\navant memset(): %s\n", str);
-	ft_memset (str + 3, '0', 11 * sizeof(char));
-	printf ("\n\nApres memset(): %s\n", str);
-	return (0);
-}
-
-// b ==> Adresse de départ de la mémoire à remplir
-// c ==> Valeur à renseigner
-// len ==> Nombre d'octets à remplir à partir de ptr à remplir
-//void *memset(void *ptr, int x, size_t n);
-*/

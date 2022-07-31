@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 18:05:39 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/15 18:47:37 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/31 17:10:48 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,19 +31,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[index] = '\0';
 	return (str);
 }
-/*
-char f(unsigned int i, char c)
-{
-	char str;
-	str = c - 32;
-	return (str);
-}
-
-int main()
-{
-	char str1[] = "abc";
-	char* str2;
-	str2 = ft_strmapi(str1, *f);
-	printf("%s\n", str2);
-}
-*/

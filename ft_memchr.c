@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 15:24:39 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/17 15:54:24 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/31 17:09:24 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,19 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-
-/*
-int main () {
-   const char str[] = "slt cv a";
-   const char ch = 's';
-   char *ret;
-   char *ret1;
-
-   ret = memchr(str, ch, 1);
-   ret1 = memchr(str, ch, 1);
-
-   printf("\n|%s| ----- |%s|\n", ret1, ret);
-
-   return(0);
-}
-*/

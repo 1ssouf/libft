@@ -6,7 +6,7 @@
 /*   By: ialousse <ialousse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 14:02:46 by ialousse          #+#    #+#             */
-/*   Updated: 2022/07/17 15:41:04 by ialousse         ###   ########.fr       */
+/*   Updated: 2022/07/31 17:10:00 by ialousse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-/*
-int	main () {
-   char dest[10] = "123456789";
-   const char src[10]  = "ABCDEFGHI";
-
-   printf("\ndest = %s, src = %s\n", dest, src);
-   memmove(dest, src, 10);
-   printf("dest = %s, src = %s\n", dest, src);
-   return(0);
-}
-*/
